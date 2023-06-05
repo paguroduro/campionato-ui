@@ -1,0 +1,17 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab *ngFor="let ng of giornate " label="Giornata {{ng}}">
+        <table>
+        <tr>
+            <th>Sq casa</th>
+            <th>Sq ospite</th>
+            <th>Risultato</th>
+        </tr>
+        <tr *ngFor="let p of datiCalendario[ng]">
+            <td>{{p.squadra_casa}}</td>
+            <td>{{p.squadra_ospite}}</td>
+            <td>{{p.reti_casa}} - {{p.reti_ospite}}</td>
+        </tr>
+    </table> 
+    </mat-tab>
+</mat-tab-group>
+

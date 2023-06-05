@@ -1,0 +1,11 @@
+<table mat-table class="mat-elevation-z8">
+    <tr>
+        <th>Squadra</th>
+        <th>Punti</th>
+    </tr>
+    <tr *ngFor="let s of datiClassifica">
+      <td>{{s.nome}}</td>
+      <td>{{s.punti}}</td>
+    </tr>
+</table>
+
